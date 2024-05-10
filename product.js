@@ -1,8 +1,15 @@
+// Initialize products variable
+let products;
+
 // Fetch product data from product.json
-//after I fetch the product from the json file I need to tell the browser what to do with the respone 
-//it is converterting the response to JSON format
 fetch("product.json")
-  .then(res => res.json())
+  .then(res => {
+    // Checks if the response is successful
+    if (!res.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return res.json();
+  })
   .then(data => {
     // Assign the fetched product data to the products variable
     products = data;
@@ -12,7 +19,7 @@ fetch("product.json")
   .catch(error => console.error('Error fetching products:', error));
 
 // Function to create HTML markup for a product
-// This document.createProductElement is 
+//so it can be displayed to the user 
 function createProductElement(product, index) {
   const productElement = document.createElement('div');
   productElement.classList.add('product-item' + (index + 1));
@@ -28,19 +35,25 @@ function createProductElement(product, index) {
   return productElement;
 }
 
-// Function to render products on the page render just means turning the data into something you can see
-//where we start creating the display we will see 
+// Function to render products on the page
+//render is showing data so that it can be displayed 
 function renderProducts() {
   const productList = document.getElementById('product-list');
   
-  products.forEach((product, index) => {
+  // Check if products is defined
+  if (products) {
+    products.forEach((product, index) => {
       const productElement = createProductElement(product, index);
       productList.appendChild(productElement);
-  });
+    });
+  } else {
+    console.error('No products to render');
+  }
 }
 
 // Call the function to render products when the page loads
 window.addEventListener('load', renderProducts);
+
 
 
 // Function for adding items to the cart
@@ -52,6 +65,7 @@ function addToCart() {
         alert("Please enter a size.");
     }
 }
+
 
 // Function to show sidebar
 function showSideBar() {
