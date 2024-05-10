@@ -32,63 +32,56 @@
     
 
     <div class="nav-icon">
-        <!-- <a href="#"><i class="fa fa-fw fa-search"></i></a> -->
-        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
-        <!-- <a href="#"><i class="fa fa-fw fa-user"></i></a> -->
         <a onclick=showSideBar() href="#"><i class="fa-solid fa-bars"></i></a>
       </div>
 
     </nav>
 
 
-    <div class="container">
-        <h1>Contact Us</h1>
-        <form method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment" rows="4" required></textarea>
-
-            <button onclick= "submitForm()" type="submit">Submit</button>
-        </form>
-        
-    </div>
-  
-
-
-
-
-
-
-
-    <footer class="foot">
-        <div class="foot-bar">
-            <div class="first-info">
-                <img src="bono-high-resolution-logo-black-transparent-3.png" alt="transparent_picture">
-                <p>BONO@Gmail.com</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    <div class = "container">
+        <div class = "left-form">
+            <h3 class = "heading">Get In Touch With Us!</h3>
+            <p class = "text">How Can We Help?</p>
+            <form action = "#">
+                <div class = "inputform">
+                    <input type = "text" name="name" class ="name" placeholder="Enter Your Name">  
+                </div>
+                <div class = "inputform">
+                    <input type = "text" name="email" class ="email" placeholder="Enter Your Email">
+                </div>         
+                <div class = "inputform">
+                    <textarea  id="message" class="message" name ="message" placeholder="Enter Your Message..."></textarea>
+                </div>
+                <button class="btn">Submit</button>
+              
+            </form>
+        </div>
+        <div class="right-form">
+            <div class="visual">
+                <img src = "bono-high-resolution-logo-black-transparent-3.png" alt="form picture">
+            </div>
+            <div class = "contact-info">
+                <div class = "info-box">
+                    <div class = "text">
+                        <p>We Are Here For You!</p>
+                    </div>
                 </div>
             </div>
-    
-            <div class="second-info">
-                <a href="#" target="_blank"><h4>Support</h4></a>
-               <a href="#" target="_blank"><p>Contact Us</p></a>
-            </div>
-    
-            <div class="third-info">
-    
-            </div>
         </div>
-    </footer>
+        <div class="form-icons">
+            <a class = "book" href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class ="twit" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a class = "gram" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a class = "git" href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                    <a class = "linked" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
 
 
 

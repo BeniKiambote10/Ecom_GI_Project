@@ -40,8 +40,7 @@
         <div class="nav-icon">
             <a onclick=showSearchBox() class="nav_search" href="#" aria-label="Search"><i class="fa fa-fw fa-search"></i></a>
             <a class= "nav_cart" id="cartAdd" href="#" aria-label="view_cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            <!-- <a class="nav_user" href="#" aria-label="User_Profile"><i class="fa fa-fw fa-user"></i></a> -->
-            <a  onclick=showSideBar() href="#" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></a>
+            <a  onclick=showSideBar() class= "nav_bars" href="#" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
 
@@ -50,6 +49,14 @@
     </div>
 
     <div id="product-list" class="products-container"></div>
+
+    <section id="emptyCartSection">
+        <div class="empty-cart-message">
+            <h2>Your cart is empty</h2>
+            <button id="goBackButton">Go back to shopping</button>
+        </div>
+    </section>
+    
 
     <footer class="foot">
         <div class="foot-bar">
