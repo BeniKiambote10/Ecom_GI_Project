@@ -61,7 +61,6 @@ nav {
     margin-right:20px;
     color:rgb(255, 255, 255);
     font-size:25px;
-    font-weight:200px;
     transition: all .42s ease;
 
 }
@@ -85,7 +84,6 @@ nav {
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(159, 71, 71, 0.1);
     display:none;
-    display:flex-start;
     flex-direction:column;
     align-items:center;
     justify-content: flex-start;
@@ -234,7 +232,7 @@ header.sticky{
     transition:all .40s;
 }
 
-    .row button {
+.row button {
       
         position: absolute; 
         top: 67%; 
@@ -248,11 +246,12 @@ header.sticky{
         cursor: pointer;
         opacity: 0; 
         transition: opacity 0.3s ease; 
-   }
-   .row button:hover{
+}
+
+.row button:hover{
     opacity: 1;
     transform: translate(-50%, -50%);
-   }
+}
 
 .row img {
     width:100%;
@@ -347,7 +346,6 @@ header.sticky{
 
 .reviews h2{
     color:white;
-    font-weight:60px;
     font-weight:400;
     text-transform:capitalize;
 
@@ -406,9 +404,7 @@ header.sticky{
         transition: all .42s ease;
         width:7%;
     
-    }
-
-
+      }
 
 }
 
@@ -416,7 +412,6 @@ header.sticky{
 @media(max-width:667px){
     .main-text h1{
         font-size:25px;
-        transition:20px;
     }
 
     .down-arrow{

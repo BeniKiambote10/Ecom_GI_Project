@@ -61,7 +61,6 @@ nav {
     margin-right:20px;
     color:rgb(255, 255, 255);
     font-size:25px;
-    font-weight:200px;
     transition: all .42s ease;
 
 }
@@ -82,7 +81,6 @@ nav {
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(159, 71, 71, 0.1);
     display:none;
-    display:flex-start;
     flex-direction:column;
     align-items:center;
     justify-content: flex-start;
@@ -173,13 +171,6 @@ nav {
     border-radius: 12px;
     margin-top: 5px;
 }
-
-#product-list:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-
 
 
 /* the Add to Cart button */
